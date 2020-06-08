@@ -1,4 +1,8 @@
-// webhooktest.js
+/* parsewebhook.js
+
+this will take a Discord webhook URL and create an object with the id and token.
+
+*/
 
 function Hook(input){
 	if (input == undefined || typeof input !== 'string' || input == '') {
