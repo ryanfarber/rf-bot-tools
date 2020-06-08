@@ -13,8 +13,13 @@ function CCCOutputParser(str) {
 	this.datacopied = str[5]
 	this.status = str[6]
 	this.exitcode = str[7]
-
-	this.formatted = `**task**: ${this.task}\n**status**: ${this.status}\n**time elapsed**: ${this.time}\n**data copied**: ${this.datacopied}`
+	
+	if (this.status == 'Success') {
+		this.message = `✅ **Copy Successful**\n**task**: ${this.task}\n**status**: ${this.status}\n**time elapsed**: ${this.time}\n**data copied**: ${this.datacopied}`;
+	} else 
+	if (this.status == 'Cancelled') {
+		this.message = `🚫 **Copy Cancelled**\n**task**: ${this.task}\n**status**: ${this.status}\n**time elapsed**: ${this.time}\n**data copied**: ${this.datacopied}`;
+	};
 };
 
 module.exports = CCCOutputParser
