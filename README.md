@@ -1,6 +1,6 @@
 # rf-bot-tools
 
-Various tools to help with coding stuff with bots
+a suite of tools to help with coding stuff with bots
 
 1) bot-message-parser
 2) ccc-output-parser
