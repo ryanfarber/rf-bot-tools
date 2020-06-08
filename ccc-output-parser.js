@@ -6,7 +6,7 @@ function CCCOutputParser(str) {
 	this.copyfrom = str[1]
 	this.copyto = str[2]
 	this.date = str[3]
-	this.timeelapsed = str[4]
+	this.time = str[4]
 	this.datacopied = str[5]
 	this.status = str[6]
 	this.exitcode = str[7]
