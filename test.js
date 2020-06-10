@@ -5,8 +5,12 @@ var message = new BotMessageParser('!bot Hi, my name is Ryan.  Who r u? k. that 
 
 const discord = new ContextBuilder().DiscordContext()
 const twitch = new ContextBuilder().TwitchContext()
+const ccc = new ContextBuilder().CCCContext()
+const trello = new ContextBuilder().TrelloContext()
 console.log(discord)
 console.log(twitch)
+// console.log(ccc)
+// console.log(trello)
 
 var text = new TextCleaner(message.text)
 console.log(text.clean)
