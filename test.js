@@ -1,10 +1,12 @@
 var { ContextBuilder, BotMessageParser, WebhookParser, TextCleaner } = require('./lib')
 
-
 var message = new BotMessageParser('!bot Hi, my name is Ryan.  Who r u? k. that is cool i guess');
-console.log(message)
+// console.log(message)
 
-const CCC = new ContextBuilder().CCCContext()
+const discord = new ContextBuilder().DiscordContext()
+const twitch = new ContextBuilder().TwitchContext()
+console.log(discord)
+console.log(twitch)
 
 var text = new TextCleaner(message.text)
 console.log(text.clean)
