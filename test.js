@@ -1,21 +1,21 @@
-var { ContextBuilder, BotMessageParser, WebhookParser, TextCleaner } = require('./lib')
+var { DiscordContext, TwitchContext, TwilioContext } = require('./lib/context-builder/')
 
-var message = new BotMessageParser('!bot Hi, my name is Ryan.  Who r u? k. that is cool i guess');
-// console.log(message)
+var data
 
-const discord = new ContextBuilder().DiscordContext()
-const twitch = new ContextBuilder().TwitchContext()
-const ccc = new ContextBuilder().CCCContext()
-const trello = new ContextBuilder().TrelloContext()
+var discord = new DiscordContext()
+var twitch = new TwitchContext()
+var twilio = new TwilioContext()
+
 console.log(discord)
 console.log(twitch)
-// console.log(ccc)
-// console.log(trello)
+console.log(twilio)
 
-var text = new TextCleaner(message.text)
-console.log(text.clean)
 
-var webhook = new WebhookParser('https://discordapp.com/api/webhooks/webhookid/webhooktoken')
-console.log(webhook)
+
+// var text = new TextCleaner(message.text)
+// console.log(text.clean)
+
+// var webhook = new WebhookParser('https://discordapp.com/api/webhooks/webhookid/webhooktoken')
+// console.log(webhook)
 
 
