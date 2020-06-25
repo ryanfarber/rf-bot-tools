@@ -2,12 +2,12 @@
 
 a suite of tools to help with coding stuff with bots
 
+### Modules
 1) bot-message-parser
-2) ccc-output-parser
-3) webhook-parser
-4) text-cleaner
-5) context-builder
-6) user-profile
+2) webhook-parser
+3) text-cleaner
+4) context-builder
+5) user-profile
 
 ### context-builder
 - Discord
@@ -16,3 +16,13 @@ a suite of tools to help with coding stuff with bots
 - Frame.io
 - Carbon Copy Cloner
 - Github
+- Transmission
+
+### bot-message-parser
+this module will parse raw text from a chat, and output the bot trigger, and following text
+
+```javascript
+var text = '!bot hello there'
+var input = new BotMessageParser(text)
+console.log(input)
+```
