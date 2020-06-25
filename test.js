@@ -13,8 +13,7 @@ console.log(discord)
 console.log(twitch)
 console.log(twilio)
 
-console.log(message.trigger)
-console.log(message.text)
+console.log(message)
 
 
 
