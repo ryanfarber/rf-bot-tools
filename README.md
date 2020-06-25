@@ -22,7 +22,12 @@ a suite of tools to help with coding stuff with bots
 this module will parse raw text from a chat, and output the bot trigger, and following text
 
 ```javascript
-var text = '!bot hello there'
-var input = new BotMessageParser(text)
-console.log(input)
+var text = '!bot hello world'
+var message = new BotMessageParser(text)
+
+console.log(message.trigger)
+// !bot
+console.log(message.text)
+// hello world
+
 ```
