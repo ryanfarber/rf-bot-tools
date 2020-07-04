@@ -38,7 +38,6 @@ a tool for interfacing with `data-store` to easily read and write the database
 ```javascript
 const { Database } = require("rf-bot-tools")
 
-
 var database = new Database("database_name","user_id")
 
 console.log(database.set("nickname", "bobby jones"))
