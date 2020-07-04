@@ -31,3 +31,6 @@ console.log(message.text)
 // hello world
 
 ```
+
+### ez-database
+a tool for interfacing with `data-store` to easily read and write the database
