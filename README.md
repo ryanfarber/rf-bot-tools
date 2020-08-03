@@ -1,5 +1,7 @@
 # rf-bot-tools
 
+# *NOTE* THIS IS A WORK IN PROGRESS
+
 a suite of tools to help with coding stuff with bots
 
 ### Modules

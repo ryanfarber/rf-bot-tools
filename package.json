@@ -1,6 +1,6 @@
 {
   "name": "rf-bot-tools",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a suite of tools to help with building bots",
   "main": "index.js",
   "scripts": {
